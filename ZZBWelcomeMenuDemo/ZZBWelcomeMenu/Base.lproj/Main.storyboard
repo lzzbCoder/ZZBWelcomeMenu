@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--WelcomeVC-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ZZBWelcomeVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="migaole" translatesAutoresizingMaskIntoConstraints="NO" id="WdB-Ov-DcP" userLabel="Icon View">
+                                <rect key="frame" x="137" y="200" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Zvf-51-f9p"/>
+                                    <constraint firstAttribute="height" constant="100" id="eMV-Rh-goF"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zh2-1a-Zqn">
+                                <rect key="frame" x="0.0" y="629" width="375" height="38"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ska-Jm-CfS">
+                                        <rect key="frame" x="155" y="0.0" width="64" height="38"/>
+                                        <state key="normal" image="tabbar_compose_icon_add" backgroundImage="tabbar_compose_button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toSendView" destination="vXZ-lx-hvc" eventType="touchUpInside" id="i4A-Hu-n9O"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.84588949280000003" green="1" blue="0.85654266570000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ska-Jm-CfS" secondAttribute="bottom" id="CzP-oe-IZb"/>
+                                    <constraint firstAttribute="height" constant="38" id="L4A-s7-TxD"/>
+                                    <constraint firstAttribute="centerX" secondItem="ska-Jm-CfS" secondAttribute="centerX" id="h3e-EA-O0T"/>
+                                    <constraint firstItem="ska-Jm-CfS" firstAttribute="top" secondItem="Zh2-1a-Zqn" secondAttribute="top" id="xZg-Ro-LVQ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎回来" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7S-fA-amB">
+                                <rect key="frame" x="148" y="315" width="79" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="CCe-s8-W7A"/>
+                                    <constraint firstAttribute="height" constant="21" id="ZX9-Op-mgf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="b7S-fA-amB" secondAttribute="centerX" id="80V-Vk-RSd"/>
+                            <constraint firstItem="WdB-Ov-DcP" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="180" id="I47-Uf-VNT"/>
+                            <constraint firstAttribute="trailing" secondItem="Zh2-1a-Zqn" secondAttribute="trailing" id="L6D-hw-f4d"/>
+                            <constraint firstAttribute="bottom" secondItem="Zh2-1a-Zqn" secondAttribute="bottom" id="Sny-2t-DXX"/>
+                            <constraint firstAttribute="centerX" secondItem="WdB-Ov-DcP" secondAttribute="centerX" id="fW4-WK-ftx"/>
+                            <constraint firstItem="Zh2-1a-Zqn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="n0g-PO-Bh9"/>
+                            <constraint firstItem="b7S-fA-amB" firstAttribute="top" secondItem="WdB-Ov-DcP" secondAttribute="bottom" constant="15" id="x9q-gw-mwg"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="iconView" destination="WdB-Ov-DcP" id="0Se-du-aj7"/>
+                        <outlet property="welcomeLbl" destination="b7S-fA-amB" id="Wbl-EO-hIJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="migaole" width="99" height="94"/>
+        <image name="tabbar_compose_button" width="64" height="44"/>
+        <image name="tabbar_compose_icon_add" width="25" height="25"/>
+    </resources>
+</document>
