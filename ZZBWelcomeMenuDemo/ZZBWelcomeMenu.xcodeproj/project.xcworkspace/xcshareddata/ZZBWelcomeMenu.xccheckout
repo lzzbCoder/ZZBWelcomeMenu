@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C48374E2-C8B6-441E-91D8-B1207CE5697B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ZZBWelcomeMenu</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>557731F501F2C673D606F62A6331FA25C8EF7E2C</key>
+		<string>https://github.com/lzzbCoder/ZZBWelcomeMenu.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ZZBWelcomeMenuDemo/ZZBWelcomeMenu.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>557731F501F2C673D606F62A6331FA25C8EF7E2C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lzzbCoder/ZZBWelcomeMenu.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>557731F501F2C673D606F62A6331FA25C8EF7E2C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>557731F501F2C673D606F62A6331FA25C8EF7E2C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ZZBWelcomeMenu</string>
+		</dict>
+	</array>
+</dict>
+</plist>
